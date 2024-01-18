@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Bruno+Ace+SC&family=Rubik+Wet+Paint&family=Vina+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Bruno+Ace+SC&family=Castoro+Titling&family=Rubik+Wet+Paint&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <div class="container">
+    <form action="action.php">
+        <h1>PAYMENT FORM</h1>
+        <hr><hr>
+        <h3>Required fileds are followed by *</h3>
+        <h2> User Details</h2>
+    <div>
+        Name:*
+        <br/>
+         <input type="text" name="name" required>
+        <br/><br/>
+        <label>
+          <fieldset>
+         <h3> *Gender </h3>
+         <br/>
+     <input type="radio" value="Male" name="gender" required> Male
+        <br/></label>
+        <label>
+        <input type="radio" value="Female" name="gender" required> Female
+        <br/></label>
+        <label>
+        <input type="radio" value="Other" name="gender" required>Other
+    </label>
+</fieldset>
+    </div>
+    <p>
+      Address:
+      <br/>
+       <textarea placeholder="full likhna chachundar" name="Address" id="Address" cols="70" rows="10"></textarea>
+        </p>
+     <p>  
+ Email:* 
+ <br/>
+ <input type="email" name="email" id="100" required> 
+ <br/>
+ <br/> 
+Pincode:* 
+<br/>
+<input type="number" name="pincode" id="108" required>
+    </p>
+    <fieldset>
+<h3>Payment Details </h3>
+<p> 
+    Card Type: *
+    <select name="card_type" id="card_type" required>
+        <option value="">--Select Card Type-- </option>
+        <option value="visa">Visa</option>
+        <option value="rupay">rupay</option>
+        <option value="masteracrd">mastercard</option>
+        <option value="sbipay">sbipay</option>
+    </select>
+</p>
+
+<p>
+    Card Number:* <input type="number" name="card_number" id="lol" required>
+    <br/> <br/>
+    Expiration Date: *<input type="date" name="exp_date" id="tarik" required>
+    <br/> <br/>
+    CVV:* 
+    <br/>
+    <input type="password" name="cvv" id="hidden" required>
+</p>
+</fieldset>
+<hr>
+<input  type="submit" value="Paynow" class="submit">
+
+    </form>
+</div>
+</body>
+</html>

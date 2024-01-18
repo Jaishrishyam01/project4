@@ -1,0 +1,40 @@
+h1{
+    text-align: center; background-color: burlywood; font-weight: bolder; font-size: xx-large; font-family: 'Bruno Ace SC', 'Arial Narrow', Arial, sans-serif; color: rgb(1, 1, 63); padding: 20px;
+}
+body{
+    font-family: 'Castoro Titling', Courier, monospace; margin: 25px 30px;
+}
+.container{
+    background-color: darkcyan;
+    padding: 10px 20px 5px 20px;
+    border: 6px solid lightcoral ;
+    border-radius: 5px;
+}
+div,pre,p{
+    font-size: x-large;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+textarea,select{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid lightpink;
+    border-radius: 5px;
+}
+*{
+    box-sizing: border-box;
+}
+.submit{
+    padding: 9px 5px;
+    margin: 12px;
+    width:90% ;
+    background-color: brown;
+    border: none;
+    color: aquamarine;
+}
+input[type="submit"]:hover{
+    background-color: rgb(196, 177, 14);
+}
